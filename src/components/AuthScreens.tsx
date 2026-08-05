@@ -11,7 +11,7 @@ export const SplashScreen = ({ onNext }: { onNext: () => void }) => (
       <img
         src="https://unsw-australia.aha.io/attachments/7669377668439886121/token/59da7646a1d771caf97e510fa123f92f2790508cef81d2592a9bd594839b005e.png?size=original"
         alt="commUnity logo"
-        className="w-full h-full object-contain"
+        className="w-full h-40 object-cover rounded-xl" // changed
       />
     </div>
     <h1 className="text-4xl font-bold mb-1 tracking-tight">
