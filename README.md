@@ -1,1 +1,1 @@
-# commUnityStudentAssistant
+# commUnity (Student Living Assistant)
