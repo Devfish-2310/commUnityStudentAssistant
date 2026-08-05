@@ -11,7 +11,7 @@ export const SplashScreen = ({ onNext }: { onNext: () => void }) => (
       <img
         src="https://unsw-australia.aha.io/attachments/7669377668439886121/token/59da7646a1d771caf97e510fa123f92f2790508cef81d2592a9bd594839b005e.png?size=original"
         alt="commUnity logo"
-        className="w-full h-40 object-cover rounded-xl" // changed
+        className="w-full h-full object-contain"
       />
     </div>
     <h1 className="text-4xl font-bold mb-1 tracking-tight">
@@ -373,7 +373,7 @@ export const OnboardingScreen = ({ onComplete }: { onComplete: () => void }) => 
           <div className="flex justify-center mb-6">
             <div className="w-32 h-32 rounded-full bg-muted border-4 border-dashed border-muted-foreground/30 flex items-center justify-center relative overflow-hidden">
                {nickname ? (
-                  <img src={`https://api.dicebear.com/9.x/avataaars/svg?seed=${nickname}&mouth=smile&eyes=default&eyebrows=default`} alt="Avatar" className="w-full h-40 object-cover rounded-xl" />
+                  <img src={`https://api.dicebear.com/9.x/avataaars/svg?seed=${nickname}&mouth=smile&eyes=default&eyebrows=default`} alt="Avatar" className="w-full h-full" />
                ) : (
                   <User size={48} className="text-muted-foreground/40" />
                )}
