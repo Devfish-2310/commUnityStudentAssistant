@@ -53,7 +53,8 @@ const Dashboard = ({ onNavigate }: { onNavigate: (screen: string) => void }) => 
             <span className="absolute top-0 right-0 w-2.5 h-2.5 bg-destructive rounded-full border-2 border-background" />
           </Button>
           <div className="w-10 h-10 rounded-full bg-muted overflow-hidden border cursor-pointer" onClick={() => onNavigate('settings')}>
-            <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Alex&mouth=smile&eyes=default&eyebrows=default" alt="Avatar" />
+            <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Alex&mouth=smile&eyes=default&eyebrows=default" alt="Avatar"  className="w-full h-40 object-cover rounded-xl"
+/>
           </div>
         </div>
       </div>
@@ -132,7 +133,8 @@ const Dashboard = ({ onNavigate }: { onNavigate: (screen: string) => void }) => 
                     <div className="w-8 h-8 rounded-full bg-muted overflow-hidden flex-shrink-0">
                       <img
                         src={`https://api.dicebear.com/9.x/avataaars/svg?seed=${task.assignee}&mouth=smile&eyes=default&eyebrows=default`}
-                        alt=""
+                        alt=""   className="w-full h-40 object-cover rounded-xl"
+
                       />
                     </div>
                     <div className="flex-1">
