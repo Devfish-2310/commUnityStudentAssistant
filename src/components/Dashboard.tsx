@@ -53,12 +53,12 @@ const Dashboard = ({ onNavigate }: { onNavigate: (screen: string) => void }) => 
             <span className="absolute top-0 right-0 w-2.5 h-2.5 bg-destructive rounded-full border-2 border-background" />
           </Button>
           <div className="w-12 h-12 rounded-full overflow-hidden border">
-  <img
-    src="https://api.dicebear.com/9.x/avataaars/svg?seed=Alex&mouth=smile&eyes=default&eyebrows=default"
-    alt="Avatar"
-    className="w-full h-full object-cover"
-  />
-</div>
+            <img
+              src="https://api.dicebear.com/9.x/avataaars/svg?seed=Alex&mouth=smile&eyes=default&eyebrows=default"
+              alt="Avatar"
+              className="w-full h-full object-cover"
+            />
+          </div>
           
 
       <div className="px-6 space-y-6 overflow-y-auto">
