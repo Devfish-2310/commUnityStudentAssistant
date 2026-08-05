@@ -51,7 +51,6 @@ export default function App() {
   const [screen, setScreen] = useState<Screen>("splash");
 
   const [selectedPayment, setSelectedPayment] = useState(1);
-
   const [selectedEvent, setSelectedEvent] = useState(1);
 
 
@@ -60,159 +59,188 @@ export default function App() {
   };
 
 
-  switch (screen) {
+  const renderScreen = () => {
 
-    case "splash":
-      return (
-        <SplashScreen
-          onNext={() => navigate("login")}
-        />
-      );
+    switch (screen) {
 
-
-    case "login":
-      return (
-        <LoginScreen
-          onLogin={() => navigate("dashboard")}
-          onForgotPassword={() => navigate("forgot")}
-          onBack={() => navigate("splash")}
-          onRegister={() => navigate("register")}
-        />
-      );
+      case "splash":
+        return (
+          <SplashScreen
+            onNext={() => navigate("login")}
+          />
+        );
 
 
-    case "register":
-      return (
-        <RegisterScreen
-          onRegister={() => navigate("verify")}
-          onBack={() => navigate("login")}
-        />
-      );
+      case "login":
+        return (
+          <LoginScreen
+            onLogin={() => navigate("dashboard")}
+            onForgotPassword={() => navigate("forgot")}
+            onBack={() => navigate("splash")}
+            onRegister={() => navigate("register")}
+          />
+        );
 
 
-    case "forgot":
-      return (
-        <ForgotPasswordScreen
-          onVerify={() => navigate("verify")}
-          onBack={() => navigate("login")}
-        />
-      );
+      case "register":
+        return (
+          <RegisterScreen
+            onRegister={() => navigate("verify")}
+            onBack={() => navigate("login")}
+          />
+        );
 
 
-    case "verify":
-      return (
-        <VerificationScreen
-          onNext={() => navigate("join")}
-          onBack={() => navigate("register")}
-        />
-      );
+      case "forgot":
+        return (
+          <ForgotPasswordScreen
+            onVerify={() => navigate("verify")}
+            onBack={() => navigate("login")}
+          />
+        );
 
 
-    case "join":
-      return (
-        <JoinCommunityScreen
-          onJoined={() => navigate("success")}
-        />
-      );
+      case "verify":
+        return (
+          <VerificationScreen
+            onNext={() => navigate("join")}
+            onBack={() => navigate("register")}
+          />
+        );
 
 
-    case "success":
-      return (
-        <SuccessJoinedScreen
-          onNext={() => navigate("onboarding")}
-        />
-      );
+      case "join":
+        return (
+          <JoinCommunityScreen
+            onJoined={() => navigate("success")}
+          />
+        );
 
 
-    case "onboarding":
-      return (
-        <OnboardingScreen
-          onComplete={() => navigate("dashboard")}
-        />
-      );
+      case "success":
+        return (
+          <SuccessJoinedScreen
+            onNext={() => navigate("onboarding")}
+          />
+        );
 
 
-    case "dashboard":
-      return (
-        <Dashboard
-          onNavigate={navigate}
-        />
-      );
+      case "onboarding":
+        return (
+          <OnboardingScreen
+            onComplete={() => navigate("dashboard")}
+          />
+        );
 
 
-    case "payments":
-      return (
-        <PaymentsScreen
-          onBack={() => navigate("dashboard")}
-          onViewDetail={(id) => {
-            setSelectedPayment(id);
-            navigate("payment-detail");
-          }}
-        />
-      );
+      case "dashboard":
+        return (
+          <Dashboard
+            onNavigate={navigate}
+          />
+        );
 
 
-    case "payment-detail":
-      return (
-        <PaymentDetailScreen
-          paymentId={selectedPayment}
-          onBack={() => navigate("payments")}
-        />
-      );
+      case "payments":
+        return (
+          <PaymentsScreen
+            onBack={() => navigate("dashboard")}
+            onViewDetail={(id) => {
+              setSelectedPayment(id);
+              navigate("payment-detail");
+            }}
+          />
+        );
 
 
-    case "events":
-      return (
-        <EventsScreen
-          onBack={() => navigate("dashboard")}
-          onViewEvent={(id) => {
-            setSelectedEvent(id);
-            navigate("event-detail");
-          }}
-        />
-      );
+      case "payment-detail":
+        return (
+          <PaymentDetailScreen
+            paymentId={selectedPayment}
+            onBack={() => navigate("payments")}
+          />
+        );
 
 
-    case "event-detail":
-      return (
-        <EventDetailScreen
-          eventId={selectedEvent}
-          onBack={() => navigate("events")}
-          onRsvp={() => navigate("rsvp")}
-        />
-      );
+      case "events":
+        return (
+          <EventsScreen
+            onBack={() => navigate("dashboard")}
+            onViewEvent={(id) => {
+              setSelectedEvent(id);
+              navigate("event-detail");
+            }}
+          />
+        );
 
 
-    case "rsvp":
-      return (
-        <RsvpConfirmationScreen
-          eventId={selectedEvent}
-          onDone={() => navigate("events")}
-        />
-      );
+      case "event-detail":
+        return (
+          <EventDetailScreen
+            eventId={selectedEvent}
+            onBack={() => navigate("events")}
+            onRsvp={() => navigate("rsvp")}
+          />
+        );
 
 
-    case "tasks":
-      return (
-        <TasksScreen
-          onBack={() => navigate("dashboard")}
-        />
-      );
+      case "rsvp":
+        return (
+          <RsvpConfirmationScreen
+            eventId={selectedEvent}
+            onDone={() => navigate("events")}
+          />
+        );
 
 
-    case "profile":
-      return (
-        <ProfileScreen
-          onBack={() => navigate("dashboard")}
-        />
-      );
+      case "tasks":
+        return (
+          <TasksScreen
+            onBack={() => navigate("dashboard")}
+          />
+        );
 
 
-    default:
-      return (
-        <SplashScreen
-          onNext={() => navigate("login")}
-        />
-      );
-  }
+      case "profile":
+        return (
+          <ProfileScreen
+            onBack={() => navigate("dashboard")}
+          />
+        );
+
+
+      default:
+        return (
+          <SplashScreen
+            onNext={() => navigate("login")}
+          />
+        );
+    }
+  };
+
+
+  return (
+    <div className="min-h-screen bg-muted flex justify-center items-center p-4">
+
+      {/* Phone frame */}
+      <div
+        className="
+          w-full
+          max-w-md
+          min-h-screen
+          bg-background
+          rounded-[2rem]
+          shadow-2xl
+          overflow-hidden
+          border
+          border-border
+        "
+      >
+
+        {renderScreen()}
+
+      </div>
+
+    </div>
+  );
 }
