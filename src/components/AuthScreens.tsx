@@ -373,7 +373,7 @@ export const OnboardingScreen = ({ onComplete }: { onComplete: () => void }) => 
           <div className="flex justify-center mb-6">
             <div className="w-32 h-32 rounded-full bg-muted border-4 border-dashed border-muted-foreground/30 flex items-center justify-center relative overflow-hidden">
                {nickname ? (
-                  <img src={`https://api.dicebear.com/9.x/avataaars/svg?seed=${nickname}&mouth=smile&eyes=default&eyebrows=default`} alt="Avatar" className="w-full h-full" />
+                  <img src={`https://api.dicebear.com/9.x/avataaars/svg?seed=${nickname}&mouth=smile&eyes=default&eyebrows=default`} alt="Avatar" className="w-full h-40 object-cover rounded-xl" />
                ) : (
                   <User size={48} className="text-muted-foreground/40" />
                )}
