@@ -2,9 +2,7 @@
 
 ## Demo Video
 
-Watch the project demonstration:
-
-## commUnity Prototype Walkthrough
+Watch the project demonstration: commUnity Prototype Walkthrough
 
 [![commUnity Prototype Walkthrough](https://github.com/user-attachments/assets/05c49c1c-57bd-4a83-883b-ef090825c7af)](https://www.youtube.com/watch?v=XRJdUiAfp6I)
 
