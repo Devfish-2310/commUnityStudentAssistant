@@ -57,11 +57,14 @@ prototype improvements.
 
 ## Tools
 
-- Aha! — Prototyping
-- Jira — User stories, backlog and project tracking
-- Confluence — Documentation and project knowledge management
-- Figma — Design and visualisation
-- Google Forms — User research and usability testing
+| Tool | Role in commUnity | Key Activities |
+|---|---|---|
+| **Aha!** | Prototyping | Built and iterated low- and high-fidelity interactive prototypes and translated requirements into user-facing workflows. |
+| **Jira** | Agile project management | Managed the backlog, user stories, acceptance criteria, tasks, priorities and project progress. |
+| **Confluence** | Project documentation | Maintained research, meeting minutes, requirements, design decisions and project knowledge. |
+| **Figma** | UX design & visualisation | Created personas, user journey maps, user flows and supporting design artefacts. |
+| **Google Forms** | Research & validation | Conducted primary user research and prototype usability testing, collecting quantitative and qualitative feedback. |
+| **GitHub** | Portfolio & documentation | Documented the project and development process and provided access to the prototype demonstration. |
 
 ## Project Links
 
