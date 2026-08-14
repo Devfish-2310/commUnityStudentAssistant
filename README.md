@@ -49,7 +49,7 @@ number of interactions required. These measures were combined with
 observations of navigation errors, hesitation and recovery behaviour to
 identify areas requiring further refinement.
 
-### Task-Level Results
+### Task Performance summary
 
 | Task | User Story | Complete | Partial | Failed | Avg Time | Avg Confidence (/5) | Avg Clicks |
 |---|---|---:|---:|---:|---:|---:|---:|
