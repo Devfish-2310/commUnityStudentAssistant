@@ -35,20 +35,7 @@ residential community experience.
 
 The project followed an evidence-based user-centred design process:
 
-1. Stakeholder analysis
-2. Secondary research
-3. Primary user research
-4. AI-assisted research
-5. Personas and user journey maps
-6. Problem definition
-7. Technical concept generation
-8. Weighted decision matrix
-9. Morphological chart
-10. User stories and acceptance criteria
-11. Low-fidelity prototyping
-12. High-fidelity prototyping
-13. Usability testing
-14. Iterative prototype improvements
+<img width="100%" alt="Image" src="https://github.com/user-attachments/assets/883e4fc8-20e0-4c49-a491-f030784a86a3" />
 
 ## User Testing
 
