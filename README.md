@@ -1,6 +1,7 @@
 # commUnity (Student Living Assistant)
-A student residential community platform designed to simplify communication, 
-maintenance, events, and access to important residential information.
+A high-fidelity prototype for a Smart Share-House & Student Living Assistant,
+designed to improve communication, information access, community engagement,
+and residential management for university students.
 
 ## Demo Video
 
@@ -30,3 +31,51 @@ residential community experience.
 - Personalisation and privacy controls
 - Accessibility-focused interface
 
+## Design & Research Process
+
+The project followed an evidence-based user-centred design process:
+
+1. Stakeholder analysis
+2. Secondary research
+3. Primary user research
+4. AI-assisted research
+5. Personas and user journey maps
+6. Problem definition
+7. Technical concept generation
+8. Weighted decision matrix
+9. Morphological chart
+10. User stories and acceptance criteria
+11. Low-fidelity prototyping
+12. High-fidelity prototyping
+13. Usability testing
+14. Iterative prototype improvements
+
+## User Testing
+
+The prototype was evaluated against the defined user stories and acceptance
+criteria.
+
+Testing examined:
+
+- Task completion
+- Task difficulty
+- User confidence
+- Navigation issues
+- Errors and recovery
+- Accessibility
+- Content clarity
+
+Testing findings were used to identify usability issues and inform subsequent
+prototype improvements.
+
+## Tools
+
+- Aha! — Prototyping
+- Jira — User stories, backlog and project tracking
+- Confluence — Documentation and project knowledge management
+- Figma — Design and visualisation
+- Google Forms — User research and usability testing
+
+## Project Links
+
+  
