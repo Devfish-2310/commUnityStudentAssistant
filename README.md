@@ -104,4 +104,10 @@ clarify labels and reduce unnecessary interaction steps.
 
 ## Project Links
 
+- Final Report: https://docs.google.com/document/d/11SnGC9IRWM4YA2LwHYJvzxxmy0meXYITcAnFT2ONAv4/edit?usp=sharing
+- Primary survey research form: https://docs.google.com/forms/d/e/1FAIpQLSeOwBButJ-MElm7YEQBD3xYX5CN1g37Kz1i5LIguXPu6HfWHQ/viewform?usp=dialog
+- Prototype testing form: https://docs.google.com/forms/d/e/1FAIpQLSfmTeGz12Y7L3BtFWncNb2XUvymaOIdX06NLNoJfMKTcivY6g/viewform?usp=dialog
+- Prototype walkthrough: https://www.youtube.com/watch?v=XRJdUiAfp6I&feature=youtu.be
+- Design Journal 1: https://docs.google.com/document/d/1wD_QdFheIHWhGn6XtTxBmPFXo8QjWA31ZahfDLRkwdk/edit?usp=sharing
+- Design Journal 2: https://docs.google.com/document/d/1LPQ9ZxElCoRjin6WuQmUPB4-3AEu2NWJnv3wx7PQiPc/edit?tab=t.0
   
